@@ -5,5 +5,18 @@
 
 
 pub fn run() {
+    let mut hello = String::from("Hello");
+    // Length
+    let len = hello.len();
+
+    println!("{}", len);
+
+    // Push character
+    hello.push('w');
+
+    // Push a string'
+
+    hello.push_str(" World");
+    println!("{}", hello);
 
 }
