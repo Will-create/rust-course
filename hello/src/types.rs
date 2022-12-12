@@ -28,6 +28,11 @@ pub fn run() {
 
     // Boolean
     let is_active = true;
-    println!("")
+    let is_greater: bool = 10 < 3;
+
+    let a1 = 'a';
+    let face = '\u{1F600}';
+
+    println!("{:?}", (x, y, z, is_active, is_greater, a1, face));
     
 }
