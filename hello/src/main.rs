@@ -1,3 +1,8 @@
+// mod strings
+// mod vars
+// mod print
+// mod types
+
 mod strings;
 
 

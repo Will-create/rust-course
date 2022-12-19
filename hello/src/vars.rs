@@ -16,5 +16,7 @@ pub fn run() {
     // Assign multiple variables
     let (myname, myage) = ("Louis Bertson", 24);
 
+
+    // Then we print the result
     println!("{} is {}", myname, myage);
 }
