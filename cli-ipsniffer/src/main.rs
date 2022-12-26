@@ -18,7 +18,6 @@ struct Arguments {
 impl Arguments {
     fn new(args: &[String]) -> Result<Arguments, &'static str> {
 
-
         if args.len() < 2 {
             return Err("Not enough arguments");
         } else if args.len() > 4 {
@@ -57,7 +56,6 @@ impl Arguments {
 }
 
 fn scan(tx: Sender<u16>, start_port: u16, addr: IpAddr, num_threads: u16) {
-
     let mut port: u16 = start_port + 1;
     loop {
         match TcpStream::connect((addr, port)) {
@@ -75,9 +73,6 @@ fn scan(tx: Sender<u16>, start_port: u16, addr: IpAddr, num_threads: u16) {
 
         port += num_threads;
     }
-
-
-
 }
 
 fn main() {
